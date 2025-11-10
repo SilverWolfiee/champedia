@@ -1,0 +1,230 @@
+.sport-choices {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  min-height: 683px;
+  background: transparent;
+  transition: all 0.3s ease;
+}
+
+.sport-choices .line {
+  background-color: #945d10;
+  height: 3px;
+  width: 100%;
+  max-width: 1321px;
+  margin: 0 auto 30px;
+  transition: background-color 0.3s ease;
+}
+
+.sport-choices.light .line {
+  background-color: #d4a855;
+}
+
+.sport-choices .section-title {
+  color: #1a1a1a;
+  font-family: "Inter-Bold", Helvetica;
+  font-size: clamp(40px, 5vw, 64px);
+  font-weight: 700;
+  letter-spacing: -1.28px;
+  line-height: 1.2;
+  text-align: center;
+  margin: 0 auto 40px;
+  transition: color 0.3s ease;
+}
+
+.sport-choices.light .section-title {
+  color: #ffffff;
+}
+
+.sport-choices .sport-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 100%;
+  max-width: 1337px;
+  margin: 0 auto;
+}
+
+.sport-choices .sport-item {
+  background-color: rgba(148, 93, 16, 0.43);
+  border: 1px solid rgba(171, 100, 0, 0.43);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 21px;
+  padding: 0;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.sport-choices.light .sport-item {
+  background-color: rgba(212, 168, 85, 0.15);
+  border-color: rgba(212, 168, 85, 0.4);
+}
+
+.sport-choices .sport-item:hover {
+  background-color: rgba(148, 93, 16, 0.6);
+  border-color: rgba(171, 100, 0, 0.7);
+  transform: translateX(5px);
+  box-shadow: 0 4px 20px rgba(148, 93, 16, 0.3);
+}
+
+.sport-choices.light .sport-item:hover {
+  background-color: rgba(212, 168, 85, 0.25);
+  border-color: rgba(212, 168, 85, 0.6);
+  box-shadow: 0 4px 20px rgba(212, 168, 85, 0.2);
+}
+
+.sport-choices .image-sport {
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0.2) 0%,
+    rgba(255, 255, 255, 0.2) 100%
+  );
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+  height: 117px;
+  width: 296px;
+  min-width: 200px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  position: relative;
+}
+
+.sport-choices .image-sport img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.3s ease;
+}
+
+.sport-choices .sport-item:hover .image-sport img {
+  transform: scale(1.05);
+}
+
+.sport-choices.light .image-sport {
+  background: linear-gradient(
+    0deg,
+    rgba(212, 168, 85, 0.1) 0%,
+    rgba(212, 168, 85, 0.05) 100%
+  );
+  border-right-color: rgba(0, 0, 0, 0.1);
+}
+
+.sport-choices .sport-name {
+  color: #1a1a1a;
+  font-family: "Inter-Bold", Helvetica;
+  font-size: clamp(24px, 3vw, 40px);
+  font-weight: 700;
+  letter-spacing: -0.80px;
+  line-height: 1.2;
+  flex: 1;
+  padding: 0 30px;
+  transition: color 0.3s ease;
+}
+
+.sport-choices.light .sport-name {
+  color: #ffffff;
+}
+
+/* Responsive breakpoints */
+@media (max-width: 1024px) {
+  .sport-choices {
+    padding: 30px 15px;
+    min-height: auto;
+  }
+
+  .sport-choices .section-title {
+    margin-bottom: 30px;
+  }
+
+  .sport-choices .sport-list {
+    gap: 24px;
+  }
+
+  .sport-choices .image-sport {
+    width: 220px;
+    min-width: 180px;
+    height: 100px;
+  }
+
+  .sport-choices .sport-name {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .sport-choices {
+    padding: 25px 15px;
+  }
+
+  .sport-choices .line {
+    margin-bottom: 20px;
+  }
+
+  .sport-choices .section-title {
+    margin-bottom: 25px;
+  }
+
+  .sport-choices .sport-list {
+    gap: 20px;
+  }
+
+  .sport-choices .sport-item {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+  }
+
+  .sport-choices .image-sport {
+    width: 100%;
+    min-width: 100%;
+    height: 150px;
+    border-right: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  }
+
+  .sport-choices.light .image-sport {
+    border-bottom-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .sport-choices .sport-name {
+    padding: 20px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .sport-choices {
+    padding: 20px 10px;
+  }
+
+  .sport-choices .line {
+    height: 2px;
+    margin-bottom: 15px;
+  }
+
+  .sport-choices .section-title {
+    margin-bottom: 20px;
+  }
+
+  .sport-choices .sport-list {
+    gap: 15px;
+  }
+
+  .sport-choices .image-sport {
+    height: 120px;
+  }
+
+  .sport-choices .sport-name {
+    padding: 15px;
+  }
+}
