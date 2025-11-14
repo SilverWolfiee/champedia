@@ -1,0 +1,38 @@
+/* Footer */
+.footer {
+  background-color: #0a002f;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  font-family: "Inter", sans-serif;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .region-title {
+    font-size: 2rem;
+  }
+
+  .country-title {
+    font-size: 1.5rem;
+  }
+
+  .team-card {
+    width: 180px;
+  }
+
+  .team-logo {
+    max-height: 180px;
+  }
+
+  .results-table th,
+  .results-table td {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+}

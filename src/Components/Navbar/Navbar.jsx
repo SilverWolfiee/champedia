@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import './Navbar.css'
-import logo from '../../assets/images/champedia-logo.jpg'
+import logo from '../../assets/images/champedia-logo.png'
 import searchIconLight from '../../assets/images/search-w.png'
 import searchIconDark from '../../assets/images/search-b.png'
 import toggle_light from '../../assets/images/night.png'
@@ -27,7 +27,9 @@ const Navbar = ({ theme, setTheme }) => {
 
     return (
         <div className={`navbar ${theme} ${isScrolled ? 'scrolled' : ''}`}>
-            <img src={logo} alt="" className='logo' />
+            <Link to="/login">
+                <img src={logo} alt="Champedia Logo" className="logo" />
+            </Link>
 
             <ul>
                 <li>

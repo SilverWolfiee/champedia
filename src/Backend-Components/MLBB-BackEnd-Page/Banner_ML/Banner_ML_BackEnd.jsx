@@ -1,8 +1,8 @@
 import React from "react";
-import "./Banner_ML.css";
+import "./Banner_ML_BackEnd.css";
 import { useNavigate } from "react-router-dom";
 
-import mlbbBanner from "../../../assets/images/mlbb_banner.png";
+
 import teamsImg from "../../../assets/images/mlbb_teams.png";
 import playersImg from "../../../assets/images/mlbb_players.png";
 import tournamentsImg from "../../../assets/images/mlbb_tournaments.png";
@@ -11,21 +11,19 @@ import equipmentsImg from "../../../assets/images/mlbb_equipments.png";
 import patchesImg from "../../../assets/images/mlbb_patches.png";
 
 const items = [
-  { id: 1, name: "Teams", image: teamsImg, path: "/TeamsPage" },
-  { id: 2, name: "Players", image: playersImg, path: "/PlayersPage" },
-  { id: 3, name: "Tournaments", image: tournamentsImg, path: "/MLBBTour" },
-  { id: 4, name: "Heroes", image: heroesImg, path: "/MLBB_Heroes" },
-  { id: 5, name: "Equipments", image: equipmentsImg, path: "/ItemsPage" },
-  { id: 6, name: "Patches and Updates", image: patchesImg, path: "/MLBBPatches" },
+  { id: 1, name: "Teams", image: teamsImg, path: "/mlbb_teams_BE" },
+  { id: 2, name: "Players", image: playersImg, path: "/mlbb_players_BE" },
+  { id: 3, name: "Tournaments", image: tournamentsImg, path: "/mlbb_tours_BE" },
+  { id: 4, name: "Heroes", image: heroesImg, path: "/mlbb_heroes_BE" },
+  { id: 5, name: "Equipments", image: equipmentsImg, path: "/mlbb_items_BE" },
+  { id: 6, name: "Patches and Updates", image: patchesImg, path: "/mlbb_patches_BE" },
 ];
 
-const BannerML = ({ theme }) => {
+const BannerML_BackEnd = ({ theme }) => {
   const navigate = useNavigate();
   return (
     <div className={`bannerMl ${theme}`}>
-      <div className="mainBanner">
-        <img src={mlbbBanner} alt="MLBB Banner" />
-      </div>
+      <h1>MLBB Admin Portal</h1>
 
       <div className="gridContainer">
         {items.map((item) => (
@@ -44,4 +42,4 @@ const BannerML = ({ theme }) => {
   );
 };
 
-export default BannerML;
+export default BannerML_BackEnd;

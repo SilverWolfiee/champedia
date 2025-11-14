@@ -227,12 +227,7 @@ const Mplid = ({ theme }) => {
             </table>
           </div>
         </section>
-      </main>
-
-      {/* Footer */}
-      <footer className="footer">
-        <p>© 2025 Champedia — All rights reserved.</p>
-      </footer>
+      </main> 
     </div>
   );
 };

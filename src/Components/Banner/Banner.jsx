@@ -1,6 +1,7 @@
 
 import React from "react";
 import slidingImage from "../../assets/images/MPLS16.png";
+import champediaLogo from "../../assets/images/champedia-logo.png";
 import "./Banner.css";
 
 export const Banner = ({theme, setTheme}) => {

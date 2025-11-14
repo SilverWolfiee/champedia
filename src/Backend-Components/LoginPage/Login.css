@@ -1,0 +1,111 @@
+/* === Layout Container === */
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+}
+
+/* === Login Box === */
+.login-box {
+  border: 2px solid #955e10;
+  border-radius: 15px;
+  padding: 2rem 2.5rem;
+  text-align: center;
+  width: 360px;
+  box-shadow: 0 0 15px rgba(149, 94, 16, 0.3);
+  background: transparent;
+}
+
+/* === Logo === */
+.login-logo {
+  width: 100px;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
+/* === Title === */
+.login-title {
+  color: #cba468;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+/* === Form === */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.form-group {
+  text-align: left;
+}
+
+.form-group label {
+  color: #cba468;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+  display: block;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  background: transparent;
+  border: 1px solid #955e10;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+
+.form-group input:focus {
+  border-color: #cba468;
+  outline: none;
+  box-shadow: 0 0 8px rgba(203, 164, 104, 0.3);
+}
+
+/* === Button === */
+button {
+  background-color: #955e10;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  background-color: #b87712;
+}
+
+/* === Errors === */
+.error {
+  color: #ff6b6b;
+  font-size: 0.85rem;
+  margin-top: 4px;
+}
+
+/* === Success === */
+.success-box {
+  border: 2px solid #1da14f;
+  color: #cba468;
+}
+
+/* === Responsive === */
+@media (max-width: 480px) {
+  .login-box {
+    width: 90%;
+    padding: 1.5rem;
+  }
+
+  .login-title {
+    font-size: 1.5rem;
+  }
+}

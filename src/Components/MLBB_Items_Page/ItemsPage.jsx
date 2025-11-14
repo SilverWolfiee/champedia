@@ -10,7 +10,6 @@ import blood_of_despair from "../../assets/images/mlbb_items/Blade_of_Despair.we
 import blade_of_the_heptaseas from "../../assets/images/mlbb_items/Blade_of_the_Heptaseas.webp";
 import windtalker from "../../assets/images/mlbb_items/Windtalker.webp";
 import endless_battle from "../../assets/images/mlbb_items/Endless_Battle.webp";
-import astraImage from "../../assets/images/heroes/astra.png";
 
 // === Magic ===
 
@@ -35,7 +34,6 @@ const itemsData = {
     { name: "Blade of the Heptaseas", logo: blade_of_the_heptaseas },
     { name: "Windtalker", logo: windtalker },
     { name: "Endless Battle", logo: endless_battle },
-    { name: "Astra", logo: astraImage },
     
   ],
   Magic: [
@@ -125,11 +123,6 @@ const ItemsPage = ({ theme }) => {
           </section>
         ))}
       </main>
-
-      {/* Footer */}
-      <footer className="footer">
-        <p>© 2025 Champedia — All rights reserved.</p>
-      </footer>
     </div>
   );
 };

@@ -134,11 +134,6 @@ const TeamsPage = ({ theme }) => {
           </section>
         ))}
       </main>
-
-      {/* Footer */}
-      <footer className="footer">
-        <p>© 2025 Champedia — All rights reserved.</p>
-      </footer>
     </div>
   );
 };

@@ -1,5 +1,4 @@
-/* === Base === */
-.mlbb-tour {
+.players-page {
   color: #fff;
   font-family: "Inter", sans-serif;
   min-height: 100vh;
@@ -8,7 +7,6 @@
   flex-direction: column;
 }
 
-/* === Header === */
 .header {
   background-color: #0a002f;
   border-bottom: 3px solid #955e10;
@@ -43,7 +41,9 @@
   background-color: #b87712;
 }
 
-/* === Main Section === */
+/* ===========================
+   Main Section
+=========================== */
 .main-content {
   width: 100%;
   max-width: 1200px;
@@ -55,30 +55,6 @@
   font-size: 2.5rem;
   margin-bottom: 2rem;
   text-shadow: 0 0 4px #000;
-}
-
-/* === Table Wrapper === */
-.results-section {
-  width: 100%;
-  max-width: 1100px; /* Controls max width */
-  margin: 0 auto; /* Centers it */
-  overflow-x: auto; /* Allows scroll on very small screens */
-  border-radius: 10px;
-  padding: 1rem;
-}
-
-/* === Section Titles === */
-.tournament-results {
-  margin-top: 3rem;
-}
-
-.results-subtitle {
-  font-size: 1.5rem;
-  color: #cba468;
-  margin-bottom: 1rem;
-  text-align: left;
-  border-left: 4px solid #955e10;
-  padding-left: 10px;
 }
 
 /* === Tables === */
@@ -129,33 +105,87 @@
   padding: 4px;
 }
 
-.edit-btn,
-.remove-btn {
-  padding: 5px 10px;
-  margin: 0 5px;
+/* === Modal Overlay === */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+/* === Modal Box === */
+.modal-content {
+  background: #0a002f;
+  border: 3px solid #955e10;
+  border-radius: 12px;
+  padding: 2rem;
+  width: 400px;
+  color: #fff;
+  text-align: left;
+  box-shadow: 0 0 20px rgba(149, 94, 16, 0.6);
+}
+
+.modal-content h2 {
+  text-align: center;
+  color: #955e10;
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  border: 2px solid #955e10;
+  border-radius: 6px;
+  background: transparent;
+  color: #fff;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+
+.add-btn {
+  background-color: #28a745;
+  color: #fff;
   border: none;
+  padding: 8px 16px;
   border-radius: 6px;
   cursor: pointer;
-  font-weight: 600;
-  transition: background-color 0.2s ease;
 }
 
-.edit-btn {
-  background-color: #4caf50;
-  color: white;
+.add-btn:hover {
+  background-color: #3bd35f;
 }
 
-.edit-btn:hover {
-  background-color: #45a049;
+.back-btn {
+  background-color: #b32d0f;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
 }
 
-.remove-btn {
-  background-color: #f44336;
-  color: white;
-}
-
-.remove-btn:hover {
-  background-color: #d32f2f;
+.back-btn:hover {
+  background-color: #d34c2b;
 }
 
 
